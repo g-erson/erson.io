@@ -4,7 +4,7 @@ const express = require('express');
 const path = require('path');
 
 // Constants
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8000;
 const HOST = '0.0.0.0';
 
 const CLIENT_BUILD_PATH = path.join(__dirname, '../../frontend/build');
@@ -19,7 +19,7 @@ app.use(express.static(CLIENT_BUILD_PATH));
 app.get('/api', (req, res) => {
   res.set('Content-Type', 'application/json');
   let data = {
-    message: 'Hello world, Woooooeeeee!!!!'
+    message: 'Hello there, world'
   };
   res.send(JSON.stringify(data, null, 2));
 });

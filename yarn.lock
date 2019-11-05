@@ -215,6 +215,11 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.yarnpkg.com/boolbase/-/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
+bulma-helpers@^0.3.8:
+  version "0.3.8"
+  resolved "https://registry.yarnpkg.com/bulma-helpers/-/bulma-helpers-0.3.8.tgz#9383f9f4b1cc5604b9b540fc26996294345f95f2"
+  integrity sha512-SZBkcRCKogzYduo9GduLMtYg2SJ7RT0hRWypWXLs48lmqKxiPgj4gWlt4TzUq7fwzhbmVbtFyfWdwvWgIYCKMA==
+
 chalk@^2.0.0, chalk@^2.4.1:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/chalk/-/chalk-2.4.2.tgz#cd42541677a54333cf541a49108c1432b44c9424"
