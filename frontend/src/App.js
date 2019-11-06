@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { useEffect, Component } from 'react';
 import './App.scss';
 import 'bulma-helpers/css/bulma-helpers.min.css'
 import 'react-bulma-components/dist/react-bulma-components.min.css';
@@ -24,6 +24,10 @@ export const App = ({ location }) => {
     listStyleType: "circle"
   };
 
+  useEffect(() => {
+    document.title = "CV";
+  }, []);
+
 
   return (
     <div className="App">
@@ -43,9 +47,9 @@ export const App = ({ location }) => {
 
       <section className="section">
         <br/><br/>
-        <div class="hero-body ">
-          <div class="columns is-centered">
-            <div class="column is-half">
+        <div className="hero-body ">
+          <div className="columns is-centered">
+            <div className="column is-half">
               <div className="container" style={{textAlign:"left"}}>
                 <h1 className="title">about me</h1>
                 <h2 className="subtitle" style={{fontSize:"small"}}>
@@ -59,9 +63,9 @@ export const App = ({ location }) => {
           </div>
         </div>
 
-        <div class="hero-body ">
-          <div class="columns is-centered">
-            <div class="column is-half">
+        <div className="hero-body ">
+          <div className="columns is-centered">
+            <div className="column is-half">
               <div className="container" style={{textAlign:"left"}}>
                 <h1 className="title">skills & education</h1>
                 <div className="columns has-padding-top-1">
@@ -94,9 +98,9 @@ export const App = ({ location }) => {
           </div>
         </div>
 
-        <div class="hero-body ">
-          <div class="columns is-centered">
-            <div class="column is-half">
+        <div className="hero-body ">
+          <div className="columns is-centered">
+            <div className="column is-half">
               <div className="container" style={{textAlign:"left"}}>
                 <h1 className="title">past employment</h1>
                 <div className="has-padding-top-1">
@@ -129,14 +133,15 @@ export const App = ({ location }) => {
           </div>
         </div>
 
-        <div class="hero-body ">
-          <div class="columns is-centered">
-            <div class="column is-half">
+        <div className="hero-body ">
+          <div className="columns is-centered">
+            <div className="column is-half">
               <div className="container" style={{textAlign:"left"}}>
                 <h1 className="title">past work & personal projects</h1>
                 <div className="has-padding-top-1">
-                  While at Red Embedded, worked on a threaded timer library in C++ for bluetooth devices.
-                  Worked on their <a href="https://www.redembedded.com/consulting/bigfoot/">bigfoot</a> system, modifying infrared controller software to send signals asynchronously
+                  While at Red Embedded, worked on a threaded timer library in C++ for bluetooth devices.<br/>
+                  Worked on their <a href="https://www.redembedded.com/consulting/bigfoot/">bigfoot</a> system, modifying infrared controller software to send signals asynchronously <br/>
+                  Put together a build pipeline & testing system with Jenkins which built set top box software and ran unit tests against it. Also helped write a few unit tests.
                   <br/><br/>
 
                   At university, worked on a group project using embedded devices to record motion/temperature etc. using Symfony to record a history of changes, and show as a graph
@@ -147,6 +152,7 @@ export const App = ({ location }) => {
                     <li style={list}> An E-commerce system tracking stock from different streams (ebay, magento) etc. and creating invoices in Xero  - Django/React</li>
                     <li style={list}> Time tracking app for billing hours against projects - Django/React </li>
                     <li style={list}> A large CRM which matches buyers to sellers by location - Symfony/PHP</li>
+                    <li style={list}> A container management plugin for WHMCS - PHP</li>
                     <li style={list}> Management software for manually & automatically assigning jobs to users, exposing APIs for mobile app to display assigned jobs to end user -  Django/React</li>
 
                     <li style={list}> Wrote specifications & quotes for several projects </li>
@@ -155,11 +161,10 @@ export const App = ({ location }) => {
                   <br/>
 
                   Wrote a basic <a href="https://github.com/g-erson/lispesque">parser</a> based on Lisp, and the <a href="https://adventofcode.com/">Advent of Code</a> puzzles in Haskell
-                  <br/>
+                  <br/><br/>
 
 
-                  Built and deployed this website with react/express/docker! 
-                  Secured with letsencrypt
+                  Built this page with react/express/docker! <br/>
                   <br/>
                 </div>
               </div>
